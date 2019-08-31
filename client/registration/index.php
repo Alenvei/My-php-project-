@@ -11,7 +11,7 @@
 <body>
     <?php
         require './view/Singup.php';
-        require '../../api/registration.php';
+        require '../../api/services/registration.php';
      
         $FORM = new SingUp();
         $FORM->render(new Registration);

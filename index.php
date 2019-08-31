@@ -24,8 +24,8 @@ if(isset($_SESSION['login'])){
         
         require "./client/render.php";
         require "./api/server.php";
-        require "./api/profile_update.php";
-        require "./api/article_upload.php";           
+        require "./api/services/profile_update.php";
+        require "./api/services/article_upload.php";           
         $BLOG = new Blog(new Server(), new Profile_update($user_id), new Article_Upload($user_id));
         $BLOG->render($user_id); 
                

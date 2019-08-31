@@ -17,29 +17,29 @@
         private function profileButtons($active){
             $about = 'none';
             $edit = 'none';
-            $articels ='none';
+            $articles ='none';
 
             switch ($active) {
                 case 'about':
                 $about = 'active';
                 $edit = 'none';
-                $articels = 'none';
+                $articles = 'none';
                     break;
                 case 'articels':
-                $articels = 'active';
+                $articles = 'active';
                 $about = 'none';
                 $edit = 'none';
                     break;
                 case 'edit':
                 $edit = 'active';
-                $articels ='none' ;
+                $articles ='none' ;
                 $about = 'none';                
                     break;
                 
                 default:
                 $about = 'none';
                 $edit = 'none';
-                $articels ='none';
+                $articles ='none';
                     break;
             }
 
@@ -48,7 +48,7 @@
             if(array_key_exists ('user', $_GET)){
                     return  "                  
                                 <a href='?user&about'><div id ='profileButton".$about."'>About me</div></a>
-                                <a href='?user&articels'><div id ='profileButton".$articels."'>Articels</div></a>
+                                <a href='?user&articels'><div id ='profileButton".$articles."'>Articels</div></a>
                                 <a href='?user&edit'><div id ='profileButton".$edit."'>Edit</div></a> 
                               
                             ";
@@ -58,7 +58,7 @@
                 return  "                 
                     
                             <a href='?profile=".$_GET['profile']."&about'><div id ='profileButton".$about."'>About me</div></a>
-                            <a href='?profile=".$_GET['profile']."&articels'><div id ='profileButton".$articels."'>Articels</div></a>
+                            <a href='?profile=".$_GET['profile']."&articels'><div id ='profileButton".$articles."'>Articels</div></a>
                         
                            
                         ";

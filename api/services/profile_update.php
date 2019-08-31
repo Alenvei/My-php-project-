@@ -8,10 +8,10 @@
         protected $user_id;
 
         public function __construct($user_id){
-            require 'db.php';
-            require_once  'model/validation.php';
-            require 'model/uploder.php';            
-            require_once 'profile.php';
+            require '../db.php';
+            require_once  '../model/validation.php';
+            require '../model/uploder.php';            
+            require_once './profile.php';
            
             $this->db = $db;
             $this->VALIDATION = new Validation();

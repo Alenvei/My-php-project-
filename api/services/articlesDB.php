@@ -3,7 +3,7 @@
     class ArticlesDB{
         private $db;
         public function __construct(){
-            require 'db.php';
+            require '../db.php';
             $this->db = $db;
         }
         //call the all articels from DB;

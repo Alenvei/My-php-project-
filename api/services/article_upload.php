@@ -6,9 +6,9 @@
         private $VALIDATION;
 
         public function __construct($user_id){
-            require 'db.php';
-            require_once 'model/validation.php';
-            require_once 'model/uploder.php';           
+            require '../db.php';
+            require_once '../model/validation.php';
+            require_once '../model/uploder.php';           
             
            
             $this->db = $db;

@@ -1,6 +1,6 @@
 <?php 
- require 'articlesDB.php';
- require_once 'profile.php';
+ require './services/articlesDB.php';
+ require_once './services/profile.php';
  
 class Server{
     protected $ARTICLES_DB ;

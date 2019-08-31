@@ -7,13 +7,13 @@ class Login{
     private $VALIDATION;
 
     public function __construct(){
-        require 'model/validation.php';
-        require 'db.php';
+        require '../model/validation.php';
+        require '../db.php';
         $this->db = $db;
         $this->VALIDATION = new Validation();
     }
     //chcek if login form is valid
-    public function chcekIfValid(){      
+    public function checkIfValid(){      
 
         if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
@@ -48,7 +48,7 @@ class Login{
             //if valid then log on the user 
             if($isValid){
 
-               $result = $this->chceckLoginUser($email); 
+               $result = $this->checkLoginUser($email); 
              
                 if($result){
 
@@ -85,7 +85,7 @@ class Login{
         }            
     }
    // chcek user Email if exists in DB 
-    private function chceckLoginUser($email){
+    private function checkLoginUser($email){
 
         $stmt = $this->db->prepare('SELECT * FROM users WHERE email = ?');
         $result = $stmt->execute([$email]);

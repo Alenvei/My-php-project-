@@ -6,14 +6,14 @@
         private $VALIDATION;
 
         public function __construct(){
-            require 'model/validation.php';            
-            require 'db.php';
+            require '../model/validation.php';            
+            require '../db.php';
             $this->db = $db;
             $this->VALIDATION = new Validation();
             
         }
-        //chcek if registration form is valid
-        public function chcekIfValid(){           
+        //check if registration form is valid
+        public function checkIfValid(){           
             
             if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
@@ -64,13 +64,13 @@
                 //if form is valid then user will be registered
                 if($isValid){
                                          
-                    if($this->chcekIfNickExists($nickname)){
+                    if($this->checkIfNickExists($nickname)){
                         $errNick = '<span>Nickname is already in use</span>';
                         $activNick =  "style='border-color:red'";
                         $exists = true;
 
                     }
-                    if($this->chcekIfEmailExists($email)){
+                    if($this->checkIfEmailExists($email)){
                         $errEmail = '<span>Email is already in use</span>';
                         $activEmail = "style='border-color:red'";
                         $exists =  true;
@@ -108,7 +108,7 @@
             }
         }
         // chcek user Nickname if exisists in DB 
-        private function chcekIfNickExists($nick){
+        private function checkIfNickExists($nick){
             $stmt = $this->db->prepare('SELECT name FROM users WHERE name = ?'); 
             $stmt->execute([$nick]) ;
             $result = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -118,7 +118,7 @@
             return $result;
         }
         // chcek user Email if exisists in DB 
-        private function chcekIfEmailExists($email){
+        private function checkIfEmailExists($email){
             $stmt = $this->db->prepare('SELECT name FROM users WHERE email = ?'); 
             $stmt->execute([$email]) ;
             $result = $stmt->fetch(PDO::FETCH_ASSOC); 

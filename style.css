@@ -1,0 +1,381 @@
+body{
+    background-color: #caced3;
+    font-family:  Calibri;
+}
+#nav-contanier{    
+    width: 100vw;       
+    background-color: rgb(42, 43, 54);
+    position: fixed;
+    margin-top: -7Vh;
+} 
+.navBlog{
+    margin-left:15vw;
+}
+nav{    
+    font-size: 3vh;
+    font-weight: bold;
+    margin :auto;
+    display: flex;  
+}
+
+nav #none{
+    
+    display: inline-block;
+    padding: 1vh 1vw;
+    color: rgb(216, 216, 216);
+    text-decoration: none;  
+    transition: 0.1s;
+}
+
+
+nav  img {
+    margin-top: -.5vh;
+    max-width: 100%;
+    height: 4vh;
+    border-radius:50% ;     
+    transition: 0.1s;
+      
+}
+
+nav .profileImg  {
+    width: 4vw;  
+    height: auto;
+   
+ }
+ 
+nav #none:hover img{
+    filter: brightness(1.2);
+}
+
+
+nav #none:hover {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(66, 67, 80); ;
+}
+
+
+nav input{
+    width: 20vw;
+    height:30px;
+    margin-left :30vh;
+    border:none;
+    border-radius: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+.dataHolder{
+    
+    width: 8vw;     
+    position: fixed;    
+    margin-left :21vw;
+    padding: 1vh;
+}
+.dataHolder a{
+    text-decoration: none;
+}
+.dataHolder img{
+    max-width: 100%;
+    height: 8vh;    
+    border-radius: 50%;
+    
+}
+.imgProfile{
+    background-color: #b7bbc0;
+    
+    border-radius: 50%;
+}
+.dataHolder  .imgProfile {
+    width: 4vw;  
+    height: auto;
+    margin: auto;
+    
+}
+
+.dataHolder div{
+    text-align: center;
+     font-weight: bold;
+         
+}
+
+.tagsHolder{
+    width: 8vw;    
+    position: fixed;    
+    margin-left :21vw;
+}   
+.tagsHolder a{ 
+    text-decoration-color:rgb(42, 43, 54); 
+
+}
+
+.tagsHolder div{
+    margin-top :2vh;
+    text-align: center;     
+    margin-bottom: 2vh;
+    color:rgb(42, 43, 54);
+    cursor: pointer;
+   
+}
+.tagsHolder div:hover{    
+    background-color:#b7bbc0;
+}
+.tagsHolder h2{
+    font-weight: bold;
+    text-align: center;
+    color: rgb(42, 43, 54);
+    padding-bottom: 1vh;
+    
+}
+.contentBlock {
+    width: 40vw;
+    margin: auto;    
+    margin-top: 7vh;
+    height: 100%;
+   
+}
+/* prerobit pre databazu*/
+ #realContent,#userContent{    
+    width: 100%;
+    height: 100%;
+    background-color:white;
+    padding: 2vh;    
+ }
+
+ #realContent img{
+    width: 100%;
+    height: 100%;    
+ }
+ #realContent h1{
+    font-weight: bold;
+ }
+ #realContent #info{
+    font-style: italic;
+    
+ }
+
+ #comments{
+    margin-top:1vh;
+    padding: 2vh;
+    width: 100%;
+    
+    background-color: white;
+   
+ }
+ #comments h1{
+    font-weight: bold;
+ }
+ 
+ .wallper{
+    position: relative;   
+    background-size:     cover;                    
+    background-repeat:   no-repeat;
+    background-position: center center;  
+    width: 100%;
+    height: 30vh;
+ }
+ .wallper img{
+    width: 100%;
+    height: 30vh;   
+ }
+
+ .textWallper{
+     width: 100%;
+     height: 20%;
+     position: absolute;     
+     background-color: #332f2f93; 
+     bottom: 0; 
+     
+ }
+
+ .textWallper p{
+    color:white;
+    font-weight: bolder;   
+    font-size:2vw;   
+    
+ }
+
+
+ #submitInput{
+     margin-top:1vh;
+     height: 5vh;
+     border:none;
+     color:white;
+     background-color: rgb(42, 43, 54);
+ }
+ .postForm input{
+     width: 100%;
+ }
+ #active {
+    text-align: center;
+    display: inline-block;
+    padding: 1vh 1vw;
+   
+    text-decoration: none;
+    color: rgb(66, 67, 80);
+    background-color:white;
+    border-color:white;
+ }
+ #editActive{
+    text-align: center;
+    display: inline-block;
+    padding: 1vh 1vw;
+ 
+   
+    text-decoration: none;
+    color: rgb(66, 67, 80);
+    background-color:#caced3;
+ }
+
+ #userPanel{
+     margin-left: 25vh;
+}
+#blog{
+    width: 100%;
+    background-color:white;
+    padding: 1vh;
+    margin-bottom: 7px;     
+}
+#blog img{
+    width: 100%;
+    height: 100%;
+ }
+#blog .imgHolder {
+    width:150px;
+    height:147px;
+     float: left;
+    margin-right: 2vh;
+}
+#blog .textHolder{
+    width:70%;
+    height: 100%;
+    display: inline-block;
+    
+}
+#singin, #singup{
+    text-align: center;
+    display: inline-block;
+    padding: 1vh 1vw;
+    color: rgb(216, 216, 216);
+    text-decoration: none;  
+    transition: 0.1s; 
+}
+
+
+#autor img, #autor p{
+    display: inline-block; 
+    
+}
+#autor a{
+   text-decoration: none;
+   font-weight: bold;
+   color :black;
+    
+}
+#autor img { 
+    max-width:5%;
+    
+    border-radius: 50%;
+}
+#profileButtonnone{
+    
+    
+    text-align: left;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    padding: .5vh;
+    font-size: 1.2em;   
+    border-radius: 5px;
+    cursor: pointer;
+    color:rgb(67, 69, 82);
+    transition: 0.1s;
+}
+
+#profileButtonactive{
+    
+    text-align: left;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    padding: .5vh;
+    font-size: 1.2em;
+    background-color: white;
+    color:rgb(66, 67, 80);
+    border-radius: 5px;
+    cursor: pointer;
+     
+    
+}
+.editBlock{
+    width: 100%;
+    background-color: white;
+    padding: 2vh 1vw;
+}
+.editBlock input[type=submit]{
+    width:20%;
+    display: block; 
+    margin: auto;
+    margin-top:2vh;
+    box-sizing: border-box; 
+    font-weight: bolder;   
+    border: none;
+    border-radius: 7px;
+    height: 6vh;
+    padding: 1vh;
+    background-color: #272831fe ;
+    color:white; 
+}
+.editBlock input[type=password]{
+    width:100%; 
+    outline: none !important;
+    font-size: 1em;
+    margin:2vh 0;
+    box-sizing: border-box;
+    display: inline-block;
+    padding-left: .5vw;
+    border: 1px solid #5d5d5dfe;
+    
+}
+.editBlock span{
+    color: red;
+    font-weight: bold;
+}
+.editBlock #correct{
+    color: green;
+    font-weight: bold;
+}
+
+
+#profileButtonnone:hover{
+    
+    background-color:#b7bbc0;
+    
+}
+@media screen and (max-width: 1440px) {
+    
+    #blog{
+        width: 100%;
+        background-color:white;
+        padding: 1vh;
+        margin-bottom: 7px; 
+        height: 145px;    
+    }
+    
+    #blog img{
+        max-width: 100%;
+         max-height: 100%;
+      }
+     #blog .imgHolder {
+         width:125px;
+         height:133px;
+          float: left;
+         margin-right: 1vh;
+     }
+     #blog .textHolder {
+        font-size :12px;     
+        width:70%;
+        height: 100%;
+        display: inline-block;
+  
+      }
+}

@@ -1,0 +1,61 @@
+body{
+    background-image: linear-gradient(-20deg, #272831fe 0%, #5595e4 100%);   
+    margin:0;
+    padding: 0;
+    height: 100vh; 
+}
+
+.regForm{    
+    width: 15vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;    
+    transform: translate(-50%, -50%);
+    height:40vh;    
+    padding: 2%;
+    background-color: white;
+}
+.regForm input[type=text], input[type=password]{
+    width:100%; 
+    outline: none !important;
+    font-size: 1em;
+    margin:2vh 0;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 4vh;
+    border: 1px solid #5d5d5dfe;
+    padding: 1vh;
+    
+    transition: all 0.30s ease-in-out;
+}
+.regForm input[type=submit]{
+    width:50%;
+    display: block; 
+    margin: auto;
+    margin-top:2vh;
+    box-sizing: border-box; 
+    font-weight: bolder;   
+    border: none;
+    border-radius: 7px;
+    height: 6vh;
+    padding: 1vh;
+    background-color: #272831fe ;
+    color:white; 
+}
+.regForm input[type=submit]:hover{
+    background-color:rgb(62, 63, 80) ;
+    cursor: pointer;
+}
+.regForm input[type=text]:focus, .regForm  input[type=password]:focus{
+    border-color: #5595e4;
+    box-shadow: 0 0 5px #5595e4;   
+}
+
+
+span{
+    color:red;
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

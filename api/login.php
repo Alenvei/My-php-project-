@@ -84,7 +84,7 @@ class Login{
 
         }            
     }
-   // chcek user Email if exisists in DB 
+   // chcek user Email if exists in DB 
     private function chceckLoginUser($email){
 
         $stmt = $this->db->prepare('SELECT * FROM users WHERE email = ?');

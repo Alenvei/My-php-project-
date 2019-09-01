@@ -4,7 +4,7 @@ require "components/article.php";
 require "components/category_holder.php";
 require "components/edit_article.php";
 require "components/user_profile.php";
-require "components/user_data.php";
+require "components/user_panel.php";
 require "components/articles_showcase.php";
 
 
@@ -25,12 +25,12 @@ class Blog{
         $user = 'none' ;
         $userTab = $this->server->getUserTabs();
         $ARTICLE = new Article();
-        $EDIT = new Edit_Article();
+        $EDIT = new EditArticle();
         $SHOWCASE = new ArticlesShowcase();
         $USER = new UserProfile($SHOWCASE, $userTab);
         
         $user_data = $this->server->getUser($user_id);
-        $USER_data_holder = new UserData();
+        $USER_panel = new UserPanel();
        
        // switching content | articles, profile, showcase of articels,  atc...
         switch ($this->server->getPage()){
@@ -52,10 +52,10 @@ class Blog{
 
             case 'user':
             if($user_id){                 
-                $userProfile = $USER->profile($user_data, $this->profile_update);
-                $USER_data_holder->render($user_data, $userProfile['active']);               
+                $userp_rofile = $USER->profile($user_data, $this->profile_update);
+                $USER_panel->render($user_data, $user_profile['active']);               
                 $user ='active'; 
-                $insert = $userProfile['content'];  
+                $insert = $user_profile['content'];  
             }else{
                 $insert= null;
             }
@@ -63,9 +63,9 @@ class Blog{
 
             case 'profile':
             $profile_data = $this->server->getProfile(); 
-            $userProfile = $USER->profile($profile_data,$this->profile_update);           
-            $USER_data_holder->render($profile_data, $userProfile['active']);
-            $insert = $userProfile['content'];            
+            $user_profile = $USER->profile($profile_data,$this->profile_update);           
+            $USER_panel->render($profile_data, $user_profile['active']);
+            $insert = $user_profile['content'];            
                 break;
 
             case 'post':

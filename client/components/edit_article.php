@@ -1,7 +1,7 @@
 <?php
     require_once 'abstrackt_form.php';
     //edit article form 
-    class Edit_Article extends Form {
+    class EditArticle extends Form {
 
 
         protected function view($valid){

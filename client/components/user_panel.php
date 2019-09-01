@@ -1,6 +1,6 @@
 <?php
-    class UserData{
-        // render the user data 
+    class UserPanel{
+        // render the user panel
         public function render ($user, $active){           
 
             echo 

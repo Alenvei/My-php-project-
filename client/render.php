@@ -32,7 +32,7 @@ class Blog{
         $user_data = $this->server->getUser($user_id);
         $USER_data_holder = new UserData();
        
-       // switching content | articels, profile, showcase of articels,  atc...
+       // switching content | articles, profile, showcase of articels,  atc...
         switch ($this->server->getPage()){
             case 'uvod':
             $insert =  '';            
@@ -87,7 +87,7 @@ class Blog{
         $this->contentBlock($insert);  
          
     } 
-    // hold content like articels, showcase of articels, user profile atc...
+    // hold content like articles, showcase of articles, user profile atc...
     private function contentBlock($insert = null){
         echo "<div class = 'contentBlock'>".$insert."</div>";
     }   

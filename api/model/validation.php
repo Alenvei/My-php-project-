@@ -9,7 +9,7 @@ class Validation {
         $this->border = "style='border-color:red'";
         $this->isValid = 'valid';       
     }
-    //chcek if email is valid
+    //check if email is valid
     public function email (){
 
         $email ='';
@@ -46,7 +46,7 @@ class Validation {
             
         ];
     }
-    //chcek if nickname is valid
+    //check  if nickname is valid
     public function nickname(){
 
         $nickname = '';
@@ -70,7 +70,7 @@ class Validation {
             'errNick' => $activNick,  
         ];
     }
-    //chcek if password is valid
+    //check  if password is valid
     public function password(){
 
         $password ='';
@@ -97,13 +97,13 @@ class Validation {
             'errPass' => $activPass,   
         ];
     }
-    //chcek if textarea is valid
+    //check  if textarea is valid
     public function textarea(){
         if(!empty($_POST["textarea"])){
             $textarea = $_POST["textarea"];
         }
     }
-    //chcek if title is valid
+    //check  if title is valid
     public function titleName(){
 
         $nickname = '';

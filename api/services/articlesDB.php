@@ -6,7 +6,7 @@
             require '../db.php';
             $this->db = $db;
         }
-        //call the all articels from DB;
+        //call the all articles from DB;
         public function show(){           
             $stmt =  $this->db->prepare('SELECT * FROM articles');
             $stmt->execute();
@@ -16,7 +16,7 @@
 
             return $res;        
         }
-        //find the specific articel in DB ;
+        //find the specific article in DB ;
         public function find($id_articel){
             $stmt =  $this->db->prepare('SELECT articles.*, users.name, users.img_profile FROM articles INNER JOIN users ON articles.id_user = users.id WHERE articles.id = ?');
             $stmt->execute([$id_articel]);

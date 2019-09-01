@@ -38,7 +38,7 @@
         // Check if $uploadOk is set to 0 by an error
         if ($uploadOk === 0) {
             $err = "<span>Sorry, your file was not uploaded.</span>";
-        // if everything is ok, try to upload file
+        // if everything is ok, it will upload img
         } else {
             if (move_uploaded_file($_FILES['img']["tmp_name"], $target_file)) {
                 if($user_img !=='./img/user.png'){

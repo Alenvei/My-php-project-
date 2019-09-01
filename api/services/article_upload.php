@@ -18,7 +18,7 @@
             $this->UPLODER = new Uploder();
                
         }
-        // chcel if articel from is valid 
+        // chcel if article form is valid 
         public function chcekIfValid(){
             $date = date('dmY');
             
@@ -79,7 +79,7 @@
 
 
         }
-        //send articels's data to DB 
+        //send article's data to DB 
         private function uploadPost($title,$img,$date,$text,$id_user){
 
             $stmt = $this->db->prepare('INSERT INTO users(title, img, article id_user) VALUES(?,?,?)');            

@@ -24,6 +24,5 @@ class SingIn extends Form {
                 </div>               
             ";
     }
-
 }
 ?>

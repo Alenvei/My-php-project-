@@ -56,9 +56,7 @@
                     <h1>Smothing about me </h1> 
                        
                         ".$user['user']['bio']."
-                    </div>   
-
-                    
+                    </div>                     
 
                 ";
 

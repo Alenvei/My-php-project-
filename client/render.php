@@ -23,13 +23,13 @@ class Blog{
         $articles = 'none';  
         $edit = 'none';  
         $user = 'none' ;
+
+        $user_data = $this->server->getUser($user_id);
         $userTab = $this->server->getUserTabs();
         $ARTICLE = new Article();
         $EDIT = new EditArticle();
         $SHOWCASE = new ArticlesShowcase();
-        $USER = new UserProfile($SHOWCASE, $userTab);
-        
-        $user_data = $this->server->getUser($user_id);
+        $USER = new UserProfile($SHOWCASE, $userTab);       
         $USER_panel = new UserPanel();
        
        // switching content | articles, profile, showcase of articels,  atc...

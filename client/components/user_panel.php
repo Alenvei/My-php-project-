@@ -58,12 +58,10 @@
                 return  "                 
                     
                             <a href='?profile=".$_GET['profile']."&about'><div id ='profileButton".$about."'>About me</div></a>
-                            <a href='?profile=".$_GET['profile']."&articels'><div id ='profileButton".$articles."'>Articels</div></a>
-                        
+                            <a href='?profile=".$_GET['profile']."&articels'><div id ='profileButton".$articles."'>Articels</div></a>              
                            
                         ";
             }
-        }
-    
+        }    
     }
 ?>

@@ -12,5 +12,7 @@ vytváranie článkov a zobrazovanie článkov podľa kategórií.
 
 **Projekt slúži len ako ukážka.**
 
+**Project is for presentation only.**
+
 
 
